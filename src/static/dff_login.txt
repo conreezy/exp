@@ -1,0 +1,10 @@
+login_url = 'http://data.crea.ca/Login.svc/Login'
+username: 40re0H4jZqvcTSOaxBji22S0
+password: QB4zjCqcLSJgfZfKnDfjJe0m
+
+
+RETS Manager -- Dajgno Rets App (AMAZING!!!)
+Paper
+https://www.sciencedirect.com/science/article/pii/S235271101930250X
+Git Hub
+https://github.com/issamhammad/RETSManager

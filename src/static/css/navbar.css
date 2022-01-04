@@ -1,0 +1,41 @@
+.nav_bar{
+width:100%;
+margin:0px 0px 0px 0px;
+display:block;
+position: fixed;
+top:0;
+z-index: 10;
+background-color: white;
+}
+
+.nav_logo img{
+display: block;
+margin:6px auto 0px auto;
+}
+
+.nav_links ul{
+list-style-type:none; 
+margin:38.5px 0px 38.5px 0px;
+padding:0;
+text-align: right;
+}
+
+.nav_links ul li{
+display: inline;
+padding:0;
+}
+
+.nav_links ul li a{
+font-size: 17px;
+font-weight: 400;
+color: black;
+padding:0px 17.5px 10px 17.5px;
+}
+
+.nav_links ul li a:hover{
+border-bottom:3px solid #9BBBFF ;
+color:#9BBBFF;
+transition: color ease .3s;
+}
+
+
