@@ -1,0 +1,6 @@
+lmited sudo user: conormc
+pass for sudo user: billyis22
+
+api pass: billyis22
+
+lionde root pass: billyis22

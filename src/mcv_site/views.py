@@ -9,28 +9,34 @@ from .forms import ContactForm
 # from houses.models import HouseSale
 
 def home_page(request):
-    my_title = "Home"
-    # qs = HouseSale.objects.all()[:6]
-    context = {"title": my_title}#,'house_list': qs}
+    title = "Exp Realty Ottawa"
+    meta_title = "Exp Realty Ottawa | Brokerage"
+    meta_description = "Exp Realty Ottawa is an Ottawa real estate brokerage that’s powered by \
+                        top agents and cutting-edge technology. Whether you’re already\
+                        a real estate agent or have a team, or thinking about a career \
+                        as a real estate agent, eXp Realty can provide you with amazing\
+                        opportunities,  joining over 36,000 agents worldwide who are\
+                        building their business, income, and skills with eXp."
+    meta_keywords = 'exp realty, exp realty ottawa, exp brokerage, \
+                     exp realty brokerage, exp ottawa, exp real estate, \
+                     exp realty agents, exp realtors, exp realty brokerage, \
+                     exp realty near me,'
+    meta_robots = "index, follow"
+
+    context = {"title": title, 
+               "meta_title":meta_title,
+               "meta_description":meta_description,
+               "meta_keywords":meta_keywords,
+               "meta_robots":meta_robots}
+
     return render(request, "index.html", context)
 
 def home_search_page(request):
     my_title = "Home Search"
 
-    ### --- DDF api
-    url = 'https://data.crea.ca/Login.svc/Login'
-    #parameters = {'id':'1',
-     #             'convert':'CAD'}
-    headers = {'username': '40re0H4jZqvcTSOaxBji22S0',
-               'password': 'QB4zjCqcLSJgfZfKnDfjJe0m'} 
-
-    session = Session()
-    session.headers.update(headers)
-    response = session.get(url)
-    ddf_info = json.loads(response.text)
 
     template_name = "home_search.html"
-    context = {"title": my_title, "ddf_info" : ddf_info}
+    context = {"title": my_title,}
     return render(request, "home_search.html", context)
 
 def buyer_seminar_page(request):

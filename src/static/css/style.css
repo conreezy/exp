@@ -1,8 +1,14 @@
+/* Colors ------
+red =  #e60000
+
+
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 .main{
-  padding:101px 0px 0px 0px;
-  margin:0px 0px 475px 0px;
+  padding:0px 0px 0px 0px;
+  margin:0px 0px 0px 0px;
 }
 
 body{
@@ -65,35 +71,256 @@ p {
   text-decoration: 
 }
 
-.hero-image {
-  height: 50%;
+.button_1{
+border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  background-color: #e60000;
+  text-align: center;
+  cursor: pointer;
+  margin: 20px 0px 20px 0px;
+  width:200px;
+  color: white;
+  font-family: 'Poppins' sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+}
+
+.button_1:hover {
+background-color: black;
+color: white;
+}
+
+.hero_image {
+  background-image: url("../image/banner/ban_1.jpg");
+  height: 900px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 
-.hero-text {
-  text-align: center;
+.hero_overlay{
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero_text {
   position: absolute;
-  top: 50%;
+  text-align: center;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  z-index: 3;
 }
 
-.hero-text button {
+.hero_text h1 {
+font-size:55px; 
+color:white;
+}
+
+.hero_text h2{
+padding:15px 0px 0px 0px;
+font-size: 27px;
+color:white;
+font-weight: normal;
+}
+
+.hero_text button {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  background-color: #e60000;
   text-align: center;
   cursor: pointer;
+  margin: 20px auto 20px auto;
+  width:200px;
+  font-family: 'Poppins' sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
 }
 
-.hero-text button:hover {
-  background-color: #555;
+.hero_text button:hover {
+  background-color: black;
   color: white;
+}
+
+.home_text_1{
+width:700px;
+padding:100px 0px 100px 0px;
+margin:0px auto 0px auto;
+text-align: center;
+}
+
+.home_text_1 h2{
+  text-align: center;
+  font-size: 35px;
+  color:black;
+  font-weight: normal;
+}
+
+.home_text_1 p{
+text-align: left;
+padding-top: 20px;
+line-height: 30px;
+color:grey; 
+}
+
+.home_text_1 button{
+margin:50px 0px 0px 0px;
+}
+
+.home_map{
+background-color: black;
+}
+
+.home_map h1{
+padding:100px 0px 50px 0px;
+margin:0px auto 0px auto;
+text-align: center;
+color: white;
+font-size:50px;
+width:1000px;
+}
+
+.home_map img{
+display: block;
+width:900px;
+margin:0px auto 0px auto;
+}
+
+.home_buy{
+display: flex;
+width:1200px;
+padding:100px 0px 100px 0px;
+margin:0px auto 0px auto;
+text-align: center;
+background-color: white;
+}
+
+.home_buy div{
+text-align: left;
+background-color: white;
+width:50%;
+margin:0;
+padding:0px 40px 0px 40px;
+}
+
+.home_buy h2{
+color:black;
+font-size:45px;
+font-weight: normal;
+padding-bottom: 25px;
+}
+
+.home_buy p{
+color:grey;
+line-height: 30px;
+padding-bottom: 40px;
+}
+
+.home_buy img{
+width:100%;
+}
+
+.home_buy button{
+}
+
+.home_sell{
+display: flex;
+width:1200px;
+padding:100px 0px 100px 0px;
+margin:0px auto 0px auto;
+text-align: center;
+background-color: white;
+}
+
+.home_sell div{
+text-align: left;
+background-color: white;
+width:50%;
+margin:0;
+padding:0px 40px 0px 40px;
+}
+
+.home_sell h2{
+color:black;
+font-size:45px;
+font-weight: normal;
+padding-bottom: 25px;
+}
+
+.home_sell p{
+color:grey;
+line-height: 30px;
+padding-bottom: 40px;
+}
+
+.home_sell img{
+width:100%;
+}
+
+.home_sell button{
+}
+
+.home_join{
+padding:100px 0px 100px 0px;
+margin:0px auto 0px auto;
+width:900px;
+background-color: white;
+text-align: center;
+}
+
+.home_join h2{
+color:black;
+font-size:45px;
+font-weight: normal;
+padding-bottom: 25px;
+}
+
+.home_join p{
+color:grey;
+line-height: 30px;
+font-size:20px;
+}
+
+.home_join button{
+margin-top: 50px
+}
+
+
+
+
+@media only screen and (max-width: 1400px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 576px) {
+
+}
+
+@media only screen and (max-width: 400px) {
+
 }

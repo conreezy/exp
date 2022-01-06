@@ -3,8 +3,68 @@
 {% block content %}
 {% load static %} 
 
-<h1 style="font-size:50px; color:black;">I am John Doe</h1>
-<p>And I'm a Photographer</p>
-<button>Hire me</button>
+<div class='hero_image'>
+	<div class='hero_overlay'>
+		<div class='hero_text'>
+			<h1>EXP Realty Ottawa</h1>
+			<h2>Your Ottawa EXP Real Estate Brokerage</h2>
+			<button><p>Learn More</p></button>
+		</div>
+	</div>
+</div>
+
+<div class='home_text_1'>
+	<h2>
+		eXp Realty Ottawa is a collective of top Ottawa real estate agents, striving to provide you with the absolute best home buying and selling experience from Stittsville to Cumberland and Downtown to Manotick.
+	</h2>
+	<p>
+		eXp agents understand that buying or selling a home is one of the biggest transactions you’ll make in your life. We are here to use our local-neighbourhood experience and knowledge to make your buying and selling experience as efficient as possible, give you great advice, represent you, and get you the best deal possible.
+	</p>
+	<button class='button_1'>Find a Home</button>
+</div>
+
+<div class='home_map'>
+	<h1>Ottawa Real Estate. Stittsville to Cumberland, Downtown to Manotick.</h1>
+	<img src="{% static 'image/ottawa_locator_map_2021.png' %}">
+</div>
+
+<div class='home_buy'>
+	<div>
+		<h2>Buying your next home</h2>
+		<p>Whether you are buying your first home or searching for your next one, eXp Realty is here for you every step of the way. From financial tips to informative listings about a specific area, we are here to make this exciting season as easy as possible. <br>
+		<br>
+		Your local eXp agents are ready to walk with you from that initial search all the way to the big move. </p>
+
+		<button class='button_1'>Learn More</button>
+	</div>
+
+	<div>
+		<img src="{% static 'image/banner/ban_1.jpg' %}">
+	</div>
+</div>
+
+<div class='home_sell'>
+	<div>
+		<img src="{% static 'image/banner/ban_1.jpg' %}">
+	</div>
+
+	<div>
+		<h2>Selling your home</h2>
+		<p>Selling your home requires just as much care as buying one, and eXp Realty is on your side from the decision to sell all the way to closing. Whether you are looking to increase curb appeal or maximize profitability, we have all the tips and tricks for selling your home with ease. Your local experts at eXp are here to help make your selling experience as smooth as possible.</p>
+
+		<button class='button_1'>Learn More</button>
+	
+	</div>
+</div>
+
+<div class='home_join'>
+	<div>
+		<h2>Selling your home</h2>
+		<p>eXp is a global cloud-based brokerage that’s powered by top agents and cutting-edge technology.
+		Whether you’re already a real estate agent or have a team, or thinking about a career as a real estate team, eXp Realty can provide you with amazing opportunities,  joining over 36,000 agents worldwide who are building their business, income, and skills with eXp.</p>
+
+		<button class='button_1'>Learn about eXp</button>
+	</div>
+</div>
 
 {% endblock %}
